@@ -24,7 +24,7 @@ $prefix = config('scanapi.routes.prefix', 'mobicard');
 
 Route::group([
     'prefix' => $prefix,
-    'middleware' => ['web'] // Only use web middleware
+    // Remove middleware completely - let Laravel handle it
 ], function () {
     Route::get('scan', [ScanApiController::class, 'index'])->name('scanapi.scan');
     Route::post('broker/scan', [ScanApiController::class, 'scanCard'])->name('scanapi.broker.scan');
