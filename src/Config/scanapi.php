@@ -25,7 +25,7 @@ return [
 
     'routes' => [
         'prefix' => 'mobicard',
-        'middleware' => ['web', 'scanapi.config'],
+        //'middleware' => ['web', 'scanapi.config'],
     ],
 
     'scan' => [
