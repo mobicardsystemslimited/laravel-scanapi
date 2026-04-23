@@ -74,4 +74,8 @@ To publish the necessary CSS, JS, and image assets:
 ```bash
 php artisan vendor:publish --tag=scanapi-assets
 ```
+
+### 6. Test the Package
+
+https://your-project-url/mobicard/scan
 ```
